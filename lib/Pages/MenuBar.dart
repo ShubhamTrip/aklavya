@@ -12,14 +12,16 @@ class Horitab extends StatefulWidget {
 class _HoritabState extends State<Horitab> {
   List<Widget> containers = [
     Container(
-      color: Colors.cyanAccent,
+      color: Colors.grey[850],
+      child: Home(),
     ),
     Container(
-      color: Colors.cyan,
+      color: Colors.grey[850],
       child: Analysis(),
     ),
     Container(
-      color: Colors.red,
+      color: Colors.grey[850],
+      child: Media(),
     )
   ];
 
@@ -44,7 +46,7 @@ class _HoritabState extends State<Horitab> {
                   ),
                   centerTitle: true,
                 ),
-                backgroundColor: Colors.green,
+                backgroundColor: Colors.green[900],
                 actions: <Widget>[
                   Padding(
                     padding: const EdgeInsets.only(right: 12),
@@ -72,7 +74,7 @@ class _HoritabState extends State<Horitab> {
                     Tab(
                       child: Container(
                           child: Text(
-                            "Media",
+                            "News",
                             style: TextStyle(fontSize: 18, color: Colors.white),
                           )),
                     ),

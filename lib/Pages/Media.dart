@@ -1,3 +1,4 @@
+import 'package:aklavya/Pages/RssFeed.dart';
 import 'package:flutter/material.dart';
 class Media extends StatefulWidget {
   @override
@@ -7,10 +8,8 @@ class Media extends StatefulWidget {
 class _MediaState extends State<Media> {
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: <Widget>[
-        Text("Hello")
-      ],
-    );
+    return RSSDemo();
+
+
   }
 }
