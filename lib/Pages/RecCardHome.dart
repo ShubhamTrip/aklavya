@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-class CardHome extends StatefulWidget {
+class RecCardHome extends StatefulWidget {
   @override
-  _CardHomeState createState() => _CardHomeState();
+  _RecCardHomeState createState() => _RecCardHomeState();
 }
 
-class _CardHomeState extends State<CardHome> {
+class _RecCardHomeState extends State<RecCardHome> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,19 +19,19 @@ class _CardHomeState extends State<CardHome> {
         children: <Widget>[
 
           Cards(
-            ImageUrl: 'images/corona.jpg',
-            Title: 'Awareness Against Covid-19',
-            url: 'https://www.cureus.com/articles/29822-covid-19-awareness-among-healthcare-students-and-professionals-in-mumbai-metropolitan-region-a-questionnaire-based-survey',
+            ImageUrl: 'images/medi.jpg',
+            Title: 'Meditation at Home',
+            url: 'https://www.brahmakumaris.org/meditation/how-to-meditate',
           ),
           Cards(
-            ImageUrl: 'images/coro1.jpg',
-            Title: 'Symptoms of Covid-19',
-            url: 'https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html',
+            ImageUrl: 'images/homex.jpg',
+            Title: 'Exercise at Home',
+            url: 'https://www.verywellfit.com/best-ways-to-exercise-at-home-1231142',
           ),
           Cards(
-            ImageUrl: 'images/qz.png',
-            Title: 'Play Covid-19 Quiz',
-            url: "https://quiz.mygov.in/quiz/quiz-on-covid-19/",
+            ImageUrl: 'images/yoga.jpg',
+            Title: 'Yoga at Home',
+            url:'https://www.wikihow.life/Do-Yoga-at-Home'
           ),
         ],
       ),

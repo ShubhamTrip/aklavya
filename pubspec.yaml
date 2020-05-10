@@ -19,6 +19,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  carousel_pro: ^1.0.0
   http: '0.11.3+17'
   webfeed: ^0.4.2
   cached_network_image: ^2.0.0-rc
@@ -27,10 +28,16 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  pie_chart:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.7.3"
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
 
 
 # For information on the generic Dart part of this file, see the
@@ -49,10 +56,22 @@ flutter:
   - images/naini.jpg
   - images/earth.jpg
   - images/india.jpg
-  - images/Coro.png
+  - images/corona.jpg
   - images/coro1.jpg
-  - images/Stayhea.png
+  - images/qz.png
   - images/no_image.png
+  - images/check.jpg
+  - images/minis.jpg
+  - images/news.jpg
+  - images/pmc.jpg
+  - images/homex.jpg
+  - images/medi.jpg
+  - images/yoga.jpg
+  - images/fb.png
+  - images/lkin.jpg
+  - images/icon.png
+  - images/coroico.jpg
+  - images/sister.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

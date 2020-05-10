@@ -1,7 +1,9 @@
+import 'package:aklavya/Pages/About.dart';
 import 'package:aklavya/Pages/Analysis.dart';
 import 'package:aklavya/Pages/Home.dart';
 import 'package:aklavya/Pages/Media.dart';
 import 'package:aklavya/Pages/navDrawer.dart';
+import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
 
 class Horitab extends StatefulWidget {
@@ -15,10 +17,12 @@ class _HoritabState extends State<Horitab> {
       color: Colors.grey[850],
       child: Home(),
     ),
+
     Container(
       color: Colors.grey[850],
-      child: Analysis(),
+        child: Analysis()
     ),
+
     Container(
       color: Colors.grey[850],
       child: Media(),
@@ -40,9 +44,22 @@ class _HoritabState extends State<Horitab> {
                 expandedHeight: 250,
                 pinned: true,
                 flexibleSpace: FlexibleSpaceBar(
-                  background: Image.asset(
-                    'images/naini.jpg',
-                    fit: BoxFit.fill,
+                  background:Carousel(
+                    autoplay: true,
+                    boxFit: BoxFit.cover,
+                    images: [
+                      AssetImage('images/naini.jpg'),
+                      AssetImage('images/earth.jpg'),
+                      AssetImage('images/india.jpg'),
+                      AssetImage('images/sister.jpg')
+                    ],
+
+                    animationCurve: Curves.fastOutSlowIn,
+                    animationDuration: Duration(milliseconds: 1300),
+                    dotColor: Colors.black,
+                    dotSize: 0.0,
+                    indicatorBgPadding: 0.0,
+
                   ),
                   centerTitle: true,
                 ),
@@ -53,6 +70,11 @@ class _HoritabState extends State<Horitab> {
                     child: IconButton(
                       icon: Icon(Icons.help_outline),
                       color: Colors.white,
+                      onPressed: (){
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => About()));
+                      },
                     ),
                   )
                 ],
@@ -67,7 +89,7 @@ class _HoritabState extends State<Horitab> {
                     Tab(
                       child: Container(
                           child: Text(
-                            "Analysis",
+                            "Live Statics",
                             style: TextStyle(fontSize: 18, color: Colors.white),
                           )),
                     ),

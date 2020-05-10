@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-class CardHome extends StatefulWidget {
+class IniCardHome extends StatefulWidget {
   @override
-  _CardHomeState createState() => _CardHomeState();
+  _IniCardHomeState createState() => _IniCardHomeState();
 }
 
-class _CardHomeState extends State<CardHome> {
+class _IniCardHomeState extends State<IniCardHome> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,19 +19,19 @@ class _CardHomeState extends State<CardHome> {
         children: <Widget>[
 
           Cards(
-            ImageUrl: 'images/corona.jpg',
-            Title: 'Awareness Against Covid-19',
-            url: 'https://www.cureus.com/articles/29822-covid-19-awareness-among-healthcare-students-and-professionals-in-mumbai-metropolitan-region-a-questionnaire-based-survey',
+            ImageUrl: 'images/check.jpg',
+            Title: 'Covid-19 Self Assessment',
+            url: 'https://public.ehealthsask.ca/sites/COVID-19/',
           ),
           Cards(
-            ImageUrl: 'images/coro1.jpg',
-            Title: 'Symptoms of Covid-19',
-            url: 'https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html',
+            ImageUrl: 'images/minis.jpg',
+            Title: 'Ministry of Ayush',
+            url: 'https://www.ayush.gov.in/',
           ),
           Cards(
-            ImageUrl: 'images/qz.png',
-            Title: 'Play Covid-19 Quiz',
-            url: "https://quiz.mygov.in/quiz/quiz-on-covid-19/",
+            ImageUrl: 'images/news.jpg',
+            Title: 'Covid-19  India',
+            url: 'https://www.mohfw.gov.in/',
           ),
         ],
       ),
